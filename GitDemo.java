@@ -29,7 +29,7 @@ public class GitDemo {
      * @param num - number to reverse the digits on
      * @return newNumber - the reverse of 'num'
      *****/
-    public void templateFunction1(int num) {
+    public double templateFunction1(int num) {
         double newNumber = 1;
         
         for(int i = 1; i <= num; ++i)
@@ -49,12 +49,12 @@ public class GitDemo {
      * @param num - number to calculate the factorial of 
      * @return factorialNumber - the factorial value of 'num'
      *****/
-    public void templateFunction2(int num) {
+    public double templateFunction2(int num) {
         double factorialNumber = 0;
         
         while( num != 0 )
         {
-            double tempe = num % 10;
+            double temp = num % 10;
             factorialNumber = factorialNumber * 10 + temp;
             num /= 10;
         }
