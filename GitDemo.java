@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+ * Fatimah Alyousef
  ******/
 public class GitDemo {
     
@@ -18,18 +18,25 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
-        return 0;
+        previousNumber = num; //add num to "previousNumber"
+        return previousNumber; //retrun "previousNumber"
     }
     
     /*****
-     * Description of function goes here
-     *
-     * @param - description of passed in arguments go here
-     * @return - description of return value goes here
+     * This function should reverse 'num' and retun the resulting value.
+     * i.e. if num = 1234
+     *      the function will return 4321
+     * @param num - number to reverse the digits on
+     * @return newNumber - the reverse of 'num'
      *****/
     public void templateFunction(int num) {
+        double newNumber = 1;
         
-        /** Code goes here **/
+        for(int i = 1; i <= num; ++i)
+        {
+            newNumber= newNumber*i;
+        }
         
+        return newNumber;
     }
 }
